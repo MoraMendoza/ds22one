@@ -22,6 +22,5 @@ l.traverse(l.getHead())
 l.prepend(new Node('d'))
 l.traverse(l.getHead())
 
-//then
-//console.log(l.contains('x'))//false
-//l.contains('a')//true
+console.log(l.contains('x'))//false
+l.contains('a')//true
