@@ -3,9 +3,9 @@
 // Node5es (data)
 //
 
-function Linked(n) {//node
-    this.head = n//node
-    this.tail = n//node
+function Linked(n) { //node
+    this.head = n
+    this.tail = n
     this.size = 1
 
     this.getHead = getHead
