@@ -67,10 +67,10 @@ class Tree {
 }
 
 let treeFinal = new Tree();
-treeFinal .add("A"); 
-treeFinal .add("B", "A"); 
-treeFinal .add("C", "A");
-treeFinal .add("D", "B");
-treeFinal .add("E", "B");
+treeFinal .add("a"); 
+treeFinal .add("b", "a"); 
+treeFinal .add("c", "a");
+treeFinal .add("d", "b");
+treeFinal .add("e", "b");
 
 treeFinal .traverseBFS((node) => console.log(node.toString()));
