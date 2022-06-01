@@ -12,11 +12,6 @@ let node2={
  next:null
 }
 
-let node3={
- data:null,
- next:null
-}
-
 
 node3.data='c'
 node2.data='b'
