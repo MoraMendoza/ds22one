@@ -19,3 +19,60 @@
  * @see {@link https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array}
  * @see {@link https://jsdoc.app}
  */
+class linklist {
+  constructor(nexus = null) {   //hs
+    this.nexus = nexus;
+  }
+  size() {
+  let count = 0;
+  let nod = this.nexus;   // cambia de node a nod para que no te
+    while (nod) {          // confundas
+      count++;
+      nod = nod.next;
+    }
+    return count;
+  }
+clear() {
+   this.nexus = null;
+  }
+ codestart(v) {
+    let node = this.nexus;
+    while (node != null && node.data != v) node = node.next;
+    return node ? true : false;
+  }
+ getfinal() {
+    let finalNode = this.nexus;
+    if (finalNode) {
+      while ( finalNode.next) {
+         finalNode =  finalNode.next;
+      }
+    }
+    return  finalNode;
+  }
+
+  getFirst() {
+    return this.nexus;
+  }
+
+  insert(node) {
+    this.getfinal().next = node;
+  }
+}
+
+class ListNodesPrincipal {
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
+}
+
+   let principal = new  ListNodesPrincipal(2);
+   let nodeA = new  ListNodesPrincipal(5);
+principal.next = nodeA;
+  let nodeB = new  ListNodesPrincipal("a");
+
+  nodeA.next = nodeB;
+
+let list = new linklist(principal);
+
+console.log(list.codestart("a"));
